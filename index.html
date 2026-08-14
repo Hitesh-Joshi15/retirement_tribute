@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#d9572c" />
+
+    <title>Zoukhra Bash · A Life Well Built</title>
+    <meta
+      name="description"
+      content="A scrolling tribute celebrating nearly thirty years with Zoukhra Bash — her journey, the moments, and thank-yous from the team."
+    />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zoukhra Bash · A Life Well Built" />
+    <meta
+      property="og:description"
+      content="A tribute you can walk through — thirty years, in frames and words."
+    />
+    <meta property="og:image" content="/og-cover.jpg" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zoukhra Bash · A Life Well Built" />
+    <meta
+      name="twitter:description"
+      content="A tribute you can walk through — thirty years, in frames and words."
+    />
+    <meta name="twitter:image" content="/og-cover.jpg" />
+
+    <!-- Apply the saved theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme')
+          if (t !== 'day' && t !== 'night') {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'night'
+              : 'day'
+          }
+          document.documentElement.dataset.theme = t
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
