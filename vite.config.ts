@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Match the GitHub Pages URL path — update if the repo is renamed or you move to a custom domain.
-  base: '/retirement_tribute/',
+  // Must match the GitHub repo name exactly (case-sensitive). Change to '/' for a custom domain.
+  base: '/zoukhra-retirement-tribute/',
   plugins: [react()],
 })

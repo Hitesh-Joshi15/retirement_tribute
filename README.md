@@ -53,11 +53,11 @@ A GitHub Actions workflow at [`.github/workflows/deploy.yml`](.github/workflows/
 
 ### One-time setup after creating the repo
 
-1. Push this code to a repo named `retirement-tribute` (matches `base` in [`vite.config.ts`](vite.config.ts)).
+1. Push this code to a repo named `zoukhra-retirement-tribute` (matches `base` in [`vite.config.ts`](vite.config.ts)).
 2. On the repo page: **Settings → Pages → Source: GitHub Actions**.
-3. Push once. Watch the **Actions** tab — after ~1 minute the site is live at `https://<owner>.github.io/retirement-tribute/`.
+3. Push once. Watch the **Actions** tab — after ~1 minute the site is live at `https://<owner>.github.io/zoukhra-retirement-tribute/`.
 
-If you rename the repo, change `base` in [`vite.config.ts`](vite.config.ts) to match. If you move to a custom domain, set `base: '/'`.
+If you rename the repo, change `base` in [`vite.config.ts`](vite.config.ts) to match (case-sensitive). If you move to a custom domain, set `base: '/'`.
 
 ---
 
